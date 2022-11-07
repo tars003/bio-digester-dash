@@ -175,7 +175,7 @@ const SingleUnit = (props) => {
                         <table className="table">
                             <tbody>
                                 <tr>
-                                    <td style={{backgroundColor: "#00FFFF", color: "black"}} >
+                                    <td style={{backgroundColor: "#00FFFF", color: "Gray"}} >
                                         Energy </td>
                                     <td  style={{backgroundColor: "rgb(228, 58, 58)", color: "white"}} >
                                     {currSerialRes.energy}</td>
