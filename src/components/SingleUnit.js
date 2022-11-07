@@ -62,7 +62,7 @@ const SingleUnit = (props) => {
                             {/* DATE TIME TABLE */}
                             <table style={{width : "80%"}}  className="table">
                                 <tbody>
-                                    <tr>
+                                    <tr className="date-time-row">
                                         <td style={{color: "black"}} >
                                             DATE </td>
                                         <td  style={{color: "white", backgroundColor: "rgb(45, 203, 123)"}} >
