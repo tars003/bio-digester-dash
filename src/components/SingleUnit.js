@@ -32,6 +32,19 @@ const SingleUnit = (props) => {
                 allSerialResponses = allSerialResponses.reverse();
                 setAllSerialRes(allSerialResponses);
             })      
+
+        let intervalID = setInterval(() => {
+
+            axios.get(`${rootUrl}/get-latest/1`)    
+            .then(res => {      
+                console.log('Response rec from server');
+                console.log(res.data);
+                let latestRes = res.data.data;
+                latestRes = latestRes.reverse();
+                setCurrSerialRes(latestRes[0]);
+            }) ;
+        
+        }, 5000);
     }, []);
 
     return (
