@@ -1,3 +1,17 @@
 table {
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
+  font-size: 18px;
+  background-color: rgb(208, 245, 236);
+  width: 50%;
+}
+td {
+  padding: 10px;
+}
+tr:nth-child(odd) {
+  background-color: Lightgreen;
+}
+
+.csv-link > a {
+  text-decoration: none;
+  color: white;
 }
