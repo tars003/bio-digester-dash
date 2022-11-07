@@ -165,21 +165,21 @@ const SingleUnit = (props) => {
                                         <td style={{backgroundColor: "#00FFFF", color: "Gray"}} >
                                             Energy </td>
                                         <td  style={{backgroundColor: "rgb(228, 58, 58)", color: "white"}} >
-                                        {currSerialRes.energy}</td>
+                                        {currSerialRes.energy} KWH</td>
                                     </tr>
 
                                     <tr>
                                         <td style={{backgroundColor: "#00FFFF", color: "black"}} >
                                             Flow Rate </td>
                                         <td  style={{backgroundColor: "rgb(228, 58, 58)", color: "white"}} >
-                                        {currSerialRes.flow}</td>
+                                        {currSerialRes.flow} LPM</td>
                                     </tr>
 
                                     <tr>
                                         <td style={{backgroundColor: "#00FFFF", color: "black"}} >
                                             Flow Volume</td>
                                         <td  style={{backgroundColor: "rgb(228, 58, 58)", color: "white"}} >
-                                        {currSerialRes.flowVolume}</td>
+                                        {currSerialRes.flowVolume} L</td>
                                     </tr>
                                 </tbody>
                             </table>
