@@ -89,6 +89,10 @@ const SingleUnit = (props) => {
                             <table className="table">
                                 <tbody>
                                     <tr>
+                                        <td colSpan={2}  className="table-heading" >
+                                            TEMPRATURE</td>
+                                    </tr>
+                                    <tr>
                                         <td style={{color: "black"}} >
                                             Temp 1</td>
                                         <td  style={{color: "black"}} >
@@ -132,6 +136,10 @@ const SingleUnit = (props) => {
                             {/* PH TABLE */}
                             <table className="table">
                                 <tbody>
+                                    <tr>
+                                        <td colSpan={2}  className="table-heading" >
+                                            PH VALUE</td>
+                                    </tr>
                                     <tr>
                                         <td style={{color: "black"}} >
                                             pH 1</td>
@@ -178,14 +186,18 @@ const SingleUnit = (props) => {
                             <table className="table">
                                 <tbody>
                                     <tr>
-                                        <td style={{color: "black", fontWeight: "bold"}}>
+                                        <td colSpan={2}  className="table-heading" >
+                                            FLOW METER</td>
+                                    </tr>
+                                    <tr>
+                                        <td style={{color: "black"}}>
                                             Flow Rate </td>
                                         <td  style={{color: "black"}} >
                                         {currSerialRes.flow} LPM</td>
                                     </tr>
 
                                     <tr>
-                                        <td style={{color: "black", fontWeight: "bold"}}>
+                                        <td style={{color: "black"}}>
                                             Flow Volume</td>
                                         <td  style={{color: "black"}} >
                                         {currSerialRes.flowVolume} L</td>
@@ -202,13 +214,17 @@ const SingleUnit = (props) => {
                             <table className="table">
                                 <tbody>
                                     <tr>
-                                        <td style={{color: "black", fontWeight: "bold"}} >
+                                        <td colSpan={2}  className="table-heading" >
+                                            ENERGY METER</td>
+                                    </tr>
+                                    <tr>
+                                        <td style={{color: "black"}} >
                                             Energy </td>
                                         <td  style={{color: "black"}} >
                                         {currSerialRes.energy} KWH</td>
                                     </tr>
                                     <tr>
-                                        <td style={{color: "black", fontWeight: "bold"}} >
+                                        <td style={{color: "black"}} >
                                             Humidity </td>
                                         <td  style={{color: "black"}} >
                                         {currSerialRes.rh}  % </td>
@@ -225,11 +241,11 @@ const SingleUnit = (props) => {
                 </Container>
 
                 {/* CSV DOWNLAOAD BUTTON */}
-                <Grid style={{marginTop: '10px', marginLeft: '-10px'}} container spacing={0}>
+                <Grid style={{marginTop: '-20px', marginLeft: '-10px'}} container spacing={0}>
                     <Grid item xs={6}>
                         <Button className="csv-link"   style={{ margin: '10px', minWidth: '300px' }}variant="contained"><CSVLink  filename={"bio-digester.csv"} data={allSerialRes}>DOWNLOAD LAST 3 DAYS</CSVLink></Button>
                     </Grid>
-                    <Grid item xs={6}></Grid>
+                    {/* <Grid item xs={6}></Grid> */}
                     <Grid item xs={6}>
                         <Button className="csv-link"  style={{ margin: '10px', minWidth: '300px' }}variant="contained"><CSVLink  filename={"bio-digester.csv"} data={allSerialRes}>DOWNLOAD LAST 7 DAYS</CSVLink></Button>
                     </Grid>

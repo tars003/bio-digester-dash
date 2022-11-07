@@ -19,3 +19,9 @@ tr:nth-child(odd) {
   text-decoration: none;
   color: white;
 }
+
+.table-heading {
+  color: black; 
+  text-align:center ;
+  font-weight: 600 ;
+}
