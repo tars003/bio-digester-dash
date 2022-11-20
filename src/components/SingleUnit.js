@@ -243,12 +243,12 @@ const SingleUnit = (props) => {
                 {/* CSV DOWNLAOAD BUTTON */}
                 <Grid style={{marginTop: '-20px', marginLeft: '-10px'}} container spacing={0}>
                     <Grid item xs={6}>
-                        <Button className="csv-link"   style={{ margin: '10px', minWidth: '300px' }}variant="contained"><CSVLink  filename={"bio-digester.csv"} data={allSerialRes}>DOWNLOAD LAST 3 DAYS</CSVLink></Button>
+                        <Button className="csv-link"   style={{ margin: '10px', minWidth: '300px' }}variant="contained"><CSVLink  filename={"bio-digester.csv"} data={allSerialRes}>DOWNLOAD LAST 30 DAYS</CSVLink></Button>
                     </Grid>
                     {/* <Grid item xs={6}></Grid> */}
-                    <Grid item xs={6}>
+                    {/* <Grid item xs={6}>
                         <Button className="csv-link"  style={{ margin: '10px', minWidth: '300px' }}variant="contained"><CSVLink  filename={"bio-digester.csv"} data={allSerialRes}>DOWNLOAD LAST 7 DAYS</CSVLink></Button>
-                    </Grid>
+                    </Grid> */}
                 </Grid>
             </Container>
         </>
