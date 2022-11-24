@@ -213,10 +213,11 @@ const SingleUnit = (props) => {
                             {/* MODBUS  TABLE */}
                             <table className="table">
                                 <tbody>
-                                    <tr>
+                                    {/* <tr>
                                         <td colSpan={2}  className="table-heading" >
                                             ENERGY METER</td>
-                                    </tr>
+                                    </tr> */}
+                                    
                                     <tr>
                                         <td style={{color: "black"}} >
                                             Energy </td>
@@ -228,6 +229,12 @@ const SingleUnit = (props) => {
                                             Humidity </td>
                                         <td  style={{color: "black"}} >
                                         {currSerialRes.rh}  % </td>
+                                    </tr>
+                                    <tr>
+                                        <td style={{color: "black"}} >
+                                            Temp 6 </td>
+                                        <td  style={{color: "black"}} >
+                                        {currSerialRes.temp6}  % </td>
                                     </tr>
                                 </tbody>
                             </table>
