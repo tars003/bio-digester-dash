@@ -234,7 +234,7 @@ const SingleUnit = (props) => {
                                         <td style={{color: "black"}} >
                                             Temp 6 </td>
                                         <td  style={{color: "black"}} >
-                                        {currSerialRes.temp6}  % </td>
+                                        {currSerialRes.temp6}  </td>
                                     </tr>
                                 </tbody>
                             </table>
