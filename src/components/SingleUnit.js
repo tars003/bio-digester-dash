@@ -6,7 +6,7 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 
-const rootUrl = "https://bio-digester-server.herokuapp.com";
+const rootUrl = "https://bio-digester-monitor.onrender.com";
 
 const SingleUnit = (props) => {
     const [currSerialRes, setCurrSerialRes] = useState({});
