@@ -6,13 +6,17 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 
-const rootUrl = "https://bio-digester-monitor.onrender.com";
+// const rootUrl = "https://bio-digester-monitor.onrender.com";
+const rootUrl = "http://ec2-3-109-201-138.ap-south-1.compute.amazonaws.com";
 
 const SingleUnit = (props) => {
     const [currSerialRes, setCurrSerialRes] = useState({});
     const [allSerialRes, setAllSerialRes] = useState([]);
 
     useEffect(() => {
+
+        console.log("-------------> Root url ----> ", rootUrl);
+
         // GET LATEST 3 SERIAL RESPONSES FOR DASHBOARD
         axios.get(`${rootUrl}/get-latest/1`)    
             .then(res => {      
