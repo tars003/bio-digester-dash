@@ -7,7 +7,7 @@ import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 
 // const rootUrl = "https://bio-digester-monitor.onrender.com";
-const rootUrl = "https://bio-digester-monitor.ml/";
+const rootUrl = "https://bio-digester-monitor.ml";
 // const rootUrl = "http://ec2-13-234-255-254.ap-south-1.compute.amazonaws.com";
 
 const SingleUnit = (props) => {
