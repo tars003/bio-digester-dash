@@ -54,9 +54,22 @@ const SingleUnit = (props) => {
 
     return (
         <>
-            <Container fixed>
-                <h1> Dashboard for Bio-digester Data Acquisition</h1>
-            </Container>
+            <Grid container style={{ marginLeft: "35px"}}>
+                <Grid item xs={3} >
+                    <img className="logo" src="/logo.jpg" />
+                </Grid>
+
+                <Grid item xs={6} style={{textAlign: "center"}}>
+                    <h1> Dashboard for Bio-digester Data Acquisition</h1>
+                </Grid>
+
+                <Grid item xs={3} >
+                    <img className="logo-drdo" src="/drdo-logo1.jpg" />
+                </Grid>
+
+                
+            </Grid>
+            
 
             {/* BODY CONTAINER */}
             <Container fixed>

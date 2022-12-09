@@ -25,3 +25,16 @@ tr:nth-child(odd) {
   text-align:center ;
   font-weight: 600 ;
 }
+
+.logo {
+  height: auto;
+  width: 258px;
+  padding: 33px;
+}
+.logo-drdo {
+  width: 122px;
+  padding-top: 15px;
+} 
+.page-title {
+  height: auto;
+}
