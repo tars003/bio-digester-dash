@@ -24,7 +24,7 @@ const SingleUnit = (props) => {
         console.log("-------------> Root url v2 ----> ", rootUrl);
 
         // GET LATEST 3 SERIAL RESPONSES FOR DASHBOARD
-        axios.get(`${rootUrl}/v2/get-latest/${params.unitId}`)
+        axios.get(`${rootUrl}/v2/get-data-latest/${params.unitId}`)
             .then(res => {
                 console.log('Response rec from server inside ');
                 console.log(res.data);
@@ -33,7 +33,7 @@ const SingleUnit = (props) => {
             })
 
         // GET ALL SERIAL RESPONSES FOR CSV DOWNLOAD
-        axios.get(`${rootUrl}/v2/get-data/${params.unitId}`)
+        axios.get(`${rootUrl}/v2/get-data-historic/${params.unitId}`)
             .then(res => {
                 console.log('Response rec from server');
                 console.log(res.data.data);
@@ -44,7 +44,7 @@ const SingleUnit = (props) => {
 
         // REFRESH DATA EVERY 5 SECs
         let intervalID = setInterval(() => {
-            axios.get(`${rootUrl}/v2/get-latest/${params.unitId}`)
+            axios.get(`${rootUrl}/v2/get-data-latest/${params.unitId}`)
                 .then(res => {
                     console.log('Response rec from server');
                     console.log(res.data);
